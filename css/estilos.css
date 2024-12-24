@@ -1,0 +1,276 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(90deg, #ff0000, #7f0000);
+    padding: 15px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+header .menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header .menu a:hover {
+    color: #ffd700;
+}
+
+header .dropdown {
+    position: relative;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 150px;
+    z-index: 1;
+}
+
+header .dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+header .dropdown-content a:hover {
+    background-color: #444;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Index Section */
+#index {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#index h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff0000;
+    text-shadow: 2px 2px 8px #7f0000;
+}
+
+#index p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#index ul {
+    list-style: none;
+    padding: 0;
+}
+
+#index ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#index ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#index ul li a:hover {
+    color: #ff0000;
+}
+
+/* Trapero Sections */
+.trapero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    border-bottom: 2px solid #222;
+}
+
+.trapero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px #000;
+}
+
+.trapero div {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.trapero h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+.trapero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Historia Section */
+#historia {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+#historia h2 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+#historia p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Mejores Canciones Section */
+#mejores-canciones {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#mejores-canciones h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #ff0000;
+    text-shadow: 2px 2px 8px #7f0000;
+}
+
+.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000;
+}
+
+.cancion h2 {
+    font-size: 1.8em;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.cancion-detalle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cancion p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ccc;
+    margin: 0;
+    flex: 2;
+}
+
+.cancion audio {
+    flex: 1;
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+/* Formulario Section */
+#formulario {
+    padding: 50px;
+    text-align: center;
+    background-color: #111;
+    border-top: 2px solid #222;
+}
+
+#formulario h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+#formulario form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #111;
+    color: #fff;
+}
+
+#formulario button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#formulario button:hover {
+    background-color: #7f0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-top: 2px solid #111;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1em;
+}
